@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ApplyLoanView from './ApplyLoanView'
+import ApplyLoanView, { AppliedLoanView } from './ApplyLoanView'
 
 class ApplyLoan extends Component {
     constructor(props) {
@@ -46,7 +46,7 @@ class ApplyLoan extends Component {
 
     render() {
         if (this.state.isSubmitted) {
-            return <ApplyLoanView.AppliedLoanView />
+            return <AppliedLoanView />
         } else {
             return <ApplyLoanView
                 name={this.state.name}

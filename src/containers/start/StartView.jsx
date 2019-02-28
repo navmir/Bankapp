@@ -13,8 +13,7 @@ const StartView = (props) => {
     const classes = props.classes
     return <div className="start-form">
         <CssBaseline />
-        <Paper className={classes.paper}>
-        </Paper>
+
     </div>
 }
 

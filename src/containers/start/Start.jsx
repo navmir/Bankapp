@@ -7,6 +7,11 @@ class Start extends Component {
         this.state = {
         };
     }
+
+    render() {
+        return <StartView />
+
+    }
 }
 
 export default Start

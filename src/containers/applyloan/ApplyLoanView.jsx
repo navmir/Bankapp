@@ -69,10 +69,11 @@ const ApplyLoanView = (props) => {
     )
 }
 
-const AppliedLoanView = () => {
+export const AppliedLoanView = () => {
     return (
         <div className="appliedloan-form">
             <Typography component="h1" variant="h4" align="center">
+                <br />
                 Tack för ansökan.
         </Typography>
         </div>
