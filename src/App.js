@@ -51,7 +51,7 @@ class App extends Component {
                   color="inherit"
                   align="center"
                   className={classes.toolbarTitle}>
-                  Forefront Bank ger förmånliga lån till folket
+                  The Bank
                 </Typography>
               </div>
             </div>

@@ -1,5 +1,4 @@
 @import '../../variables.scss';
-@import '../../App.css';
 
 .start-view {
   background-color: $color-5;
@@ -14,3 +13,21 @@
   margin: 10px;
 }
 
+.house-logo {
+  background-image: url('https://image.flaticon.com/icons/svg/1464/1464299.svg');
+  background-repeat: no-repeat;
+  background-color: $color-2;
+  background-position: center;
+  border: 2px ridge;
+  background-size: 150px;
+  width: 400px;
+  height: 200px;
+  margin-top: 100px;
+}
+
+.btn-apply {
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  height: 25%;
+}
