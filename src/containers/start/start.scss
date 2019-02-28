@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+@import '../../App.css';
+
+.start-view {
+  background-color: $color-5;
+}
+
+.start-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-field {
+  margin: 10px;
+}
+
