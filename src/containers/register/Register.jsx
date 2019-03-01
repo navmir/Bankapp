@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
-import ApplyLoanView, { AppliedLoanView } from './ApplyLoanView'
+import RegisterView from './RegisterView'
 
-export default class ApplyLoan extends Component {
+export default class Register extends Component {
     constructor(props) {
         super(props);
         this.state = {
             name: "",
-            age: "",
-            amount: "",
-            duration: "",
-            reason: "",
+            ssn: "",
+            email: "",
+            phone: "",
             isSubmitted: false
         };
     }
@@ -19,23 +18,18 @@ export default class ApplyLoan extends Component {
         console.log(this.state);
     }
 
-    updateAge = event => {
+    updateSSN = event => {
         this.setState({ age: event.target.value });
         console.log(this.state);
     }
 
-    updateAmount = event => {
+    updateEmail = event => {
         this.setState({ amount: event.target.value });
         console.log(this.state);
     }
 
-    updateDuration = event => {
+    updatePhone = event => {
         this.setState({ duration: event.target.value });
-        console.log(this.state);
-    }
-
-    updateReason = event => {
-        this.setState({ reason: event.target.value });
         console.log(this.state);
     }
 
@@ -46,19 +40,17 @@ export default class ApplyLoan extends Component {
 
     render() {
         if (this.state.isSubmitted) {
-            return <AppliedLoanView />
+            return <div>NAAH SON</div>
         } else {
-            return <ApplyLoanView
+            return <RegisterView
                 name={this.state.name}
-                age={this.state.age}
-                amount={this.state.amount}
-                duration={this.state.duration}
-                reason={this.state.reason}
+                ssn={this.state.ssn}
+                email={this.state.email}
+                phone={this.state.phone}
                 nameChanged={this.updateName}
-                ageChanged={this.updateAge}
-                amountChanged={this.updateAmount}
-                durationChanged={this.updateDuration}
-                reasonChanged={this.updateReason}
+                ssnChanged={this.updateSSN}
+                emailChanged={this.updateEmail}
+                phoneChanged={this.updatePhone}
                 onClick={this.saveInput} />
         }
     }

@@ -6,28 +6,64 @@
 
 .start-form {
     max-width: 600px;
-    margin: 0 auto;
-}
-
-.input-field {
-  margin: 10px;
+    margin: 0px auto;
 }
 
 .house-logo {
   background-image: url('https://image.flaticon.com/icons/svg/1464/1464299.svg');
   background-repeat: no-repeat;
   background-color: $color-2;
-  background-position: center;
-  border: 2px ridge;
-  background-size: 150px;
-  width: 400px;
-  height: 200px;
-  margin-top: 100px;
+  background-position: center top;
+  background-position-y: 20%;
+  padding-top: 130px;
+  border: 1px ridge;
+  background-size: 100px;
+  width: 350px;
+  height: 180px;
+  font-size: 19px;
+}
+
+.login-logo {
+  background-image: url('https://image.flaticon.com/icons/svg/1465/1465504.svg');
+  background-repeat: no-repeat;
+  background-color: $color-2;
+  background-position: center top;
+  background-position-y: 20%;
+  padding-top: 130px;
+  border: 1px ridge;
+  background-size: 100px;
+  width: 350px;
+  height: 180px;
+  font-size: 19px;
+}
+
+.contact-logo {
+  background-image: url('https://image.flaticon.com/icons/svg/1470/1470002.svg');
+  background-repeat: no-repeat;
+  background-color: $color-2;
+  background-position: center top;
+  background-position-y: 20%;
+  padding-top: 130px;
+  border: 1px ridge;
+  background-size: 110px;
+  width: 350px;
+  height: 180px;
+  font-size: 19px;
 }
 
 .btn-apply {
-  width: 100%;
-  position: absolute;
-  top: 200px;
-  height: 25%;
+  float: left;
+}
+
+.btn-login {
+  float: left;
+}
+
+
+.btn-contact {
+  float: left;
+}
+
+.space {
+  margin-top: 60px;
 }

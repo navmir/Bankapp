@@ -9,6 +9,8 @@ import Navigation from './containers/navigation/Navigation'
 import Path from './containers/path/Path'
 import ApplyLoan from './containers/applyloan/ApplyLoan';
 import Start from './containers/start/Start';
+import Login from './containers/login/Login';
+import Register from './containers/register/Register';
 import './App.css'
 
 const styles = theme => ({
@@ -51,7 +53,7 @@ class App extends Component {
                   color="inherit"
                   align="center"
                   className={classes.toolbarTitle}>
-                  The Bank
+                  Forefront Bank
                 </Typography>
               </div>
             </div>
@@ -59,6 +61,8 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Start} />
                 <Route path="/ansokan" component={ApplyLoan} />
+                <Route path="/logga-in" component={Login} />
+                <Route path="/registrera" component={Register} />
                 <Route component={Path} />
               </Switch>
             </div>

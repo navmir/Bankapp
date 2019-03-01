@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import StartView from './StartView'
 
-class Start extends Component {
+export default class Start extends Component {
 
 
     render() {
@@ -12,5 +12,3 @@ class Start extends Component {
         )
     }
 }
-
-export default Start

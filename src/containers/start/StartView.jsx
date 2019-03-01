@@ -1,10 +1,5 @@
 import React from 'react'
-import { withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import TextField from '@material-ui/core/TextField';
-import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 
 import { Link } from 'react-router-dom';
@@ -14,14 +9,31 @@ import './start.scss'
 const StartView = (props) => {
     return <div className="start-form">
         <CssBaseline />
-        <div className="house-logo">
-            <Link to="/ansokan">
-                <Button className="btn-apply" variant="contained" color="primary" component="span">
+        <div className="space"></div>
+        <Link to="/ansokan">
+            <Button className="btn-apply" color="primary" >
+                <div className="house-logo">
                     Gör en lånelöftesansökan
-                </Button>
-            </Link>
-        </div >
+                </div >
+            </Button>
+        </Link>
+        <div className="space"></div>
+        <Link to="/logga-in">
+            <Button className="btn-login" color="primary" >
+                <div className="login-logo">
+                    Logga in
+                </div >
+            </Button>
+        </Link>
+        <div className="space"></div>
+        <Link to="/kontakt">
+            <Button className="btn-contact" color="primary" >
+                <div className="contact-logo">
+                    Kontakta oss
+                </div >
+            </Button>
+        </Link>
     </div >
 }
 
-export default StartView;
+export default StartView
